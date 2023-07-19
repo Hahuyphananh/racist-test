@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+    <title>Racist test</title>
+    <style>
+        body, h1{
+            text-align: center;
+            font-size: 50px;
+            background-color:turquoise;
+        }
+        button{
+            width: 100px;
+            height:50px;
+            background-color:gold;
+        }
+    </style>
+</head>
+<body>
+    <br><br><br>
+    <h1 id="race">Racist test</h1>
+    <br>
+    <button onclick="race();hide()" id="hide">Click here</button>
+
+<script>
+function race(){
+document.getElementById('race')
+.innerHTML=
+'Do you like people of color?<br><br><button style="margin:20px" onclick="friends()">Yes</button><button onclick="racist()">No</button>'
+};
+
+function hide(){document.getElementById('hide').style.display = "none"};
+
+function racist(){
+document.getElementById('race')
+.innerHTML="You are a racist<br><br><img src='racist.jpg'><br><button onclick='tryAgain()'>Try again</button>";
+}
+    
+function tryAgain(){location.reload()};
+
+function friends(){
+document.getElementById('race')
+.innerHTML=
+'Do you have friends of color?<br><br><button style="margin:20px" onclick="know()">Yes</button><button onclick="racist()">No</button>'
+};
+
+function know(){
+document.getElementById('race')
+.innerHTML=
+'Does your mom knows that you are racist?<br><br><button style="margin:20px" onclick="racist()">Yes</button><button onclick="still()">No</button>'
+};
+
+function still(){
+document.getElementById('race')
+.innerHTML=
+'Tell your mom that you are racist<br><br><button style="margin:20px" onclick="racist()">Sure</button><button onclick="racist()">No way</button>'
+};
+</script>
+
+
+
+
+</body>
+
+
+
+
+
+</html>
